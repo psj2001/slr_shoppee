@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
+import 'package:slr_shoppee/screens/login.dart';
 
 class MyIntro extends StatelessWidget {
   const MyIntro({super.key});
@@ -81,11 +82,11 @@ class MyIntro extends StatelessWidget {
                             primary: Colors.black,
                             minimumSize: Size(250, 50)),
                         onPressed: () {
-                          // Navigator.push(
-                          //   context,
-                          //   MaterialPageRoute(
-                          //       builder: (context) => SelectCountry()),
-                          // );
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => LoginPage()),
+                          );
                         },
                         child: Text(
                           "GET STARTED",
